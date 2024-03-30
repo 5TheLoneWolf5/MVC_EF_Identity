@@ -1,0 +1,47 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+#main-page > * {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+    display: block !important; /* It needs to be. */
+}
+
+.header {
+    background-color: #fbfbfb;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.header h5 {
+    font-weight: normal !important;
+}
+
+#images {
+    float: right !important;
+}

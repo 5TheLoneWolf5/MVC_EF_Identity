@@ -1,0 +1,36 @@
+﻿@using InfnetMVC.ViewModels
+@model RegisterViewModel
+@{
+    ViewData["Title"] = "Registrar";
+}
+
+<h1 class="text-center">@ViewData["Title"]</h1>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow">
+            <div class="card-body">
+                <form method="post" class="needs-validation" novalidate>
+                    <h2 class="text-center mb-4">Criar uma nova conta</h2>
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3" role="alert"></div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="Email" class="form-control" autocomplete="username" aria-required="true" placeholder="nome@exemplo.com" required />
+                        <label asp-for="Email">E-mail</label>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="senha" required />
+                        <label asp-for="Password">Senha</label>
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="senha" required />
+                        <label asp-for="ConfirmPassword">Confirmar Senha</label>
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+                    <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Registrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
