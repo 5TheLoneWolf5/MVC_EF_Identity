@@ -7,4 +7,3 @@ InfnetMVC_EF_Identity is a comprehensive web application built on the ASP.NET MV
 * Framework: ASP.NET MVC
 * Database Management: Entity Framework
 * Authentication: ASP.NET Identity
-* Dependencies: Microsoft.Extensions.Logging, Microsoft.AspNetCore.Identity
